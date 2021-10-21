@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Header Sniff",
+	"version": "0.1",
+
+	"content_scripts": [
+		{
+			"matches": [
+				"http://ple.odu.edu/*",
+				"https://ple.odu.edu/*"
+			],
+			"css": ["inject.css"]
+		}
+	]
+}

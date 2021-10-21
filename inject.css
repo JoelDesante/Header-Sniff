@@ -1,0 +1,24 @@
+/*
+	Inject css. This will highlight all the h1's and 2's
+*/
+
+#odu_content div:not(.odu_headerTitle) > h1, #odu_content div:not(.odu_headerTitle) > h2 {
+	background-color: yellow;
+}
+
+#odu_content div:not(.odu_headerTitle) > h1::after, #odu_content div:not(.odu_headerTitle) > h2::after {
+	content: '!';
+	display: inline-block;
+	background-color: red;
+
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	line-height: 25px;
+
+	width: 25px; 
+	height: 25px;
+	border-radius: 100%;
+
+	margin-left: 20px; 
+}
